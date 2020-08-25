@@ -1,0 +1,502 @@
+focus_tree = {
+	id = stalliongrad
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = STG
+		}
+	}
+	continuous_focus_position = { x = 2675 y = 100 }
+	default = no
+	focus = {
+		id = the_palace
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+			STG = {
+				set_variable = {
+					var = money
+					value = 15
+				}
+			}
+		}		
+	}
+	focus = {
+		id = industialization_step_one
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -4
+		y = 1
+		prerequisite = {focus = the_palace }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = build_more_military_factories
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -7
+		y = 2
+		prerequisite = {focus = industialization_step_one }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = vasyas_industry_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -6
+		y = 3
+		prerequisite = { focus = build_more_military_factories }
+		prerequisite = { focus = build_more_civilian_industry }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = build_more_civilian_industry
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -5
+		y = 2
+		prerequisite = {focus = industialization_step_one }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = build_more_railroads
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -3
+		y = 2
+		prerequisite = {focus = industialization_step_one }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = polyas_industry_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -4
+		y = 3
+		prerequisite = { focus = build_more_railroads }
+		prerequisite = { focus = build_more_civilian_industry }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = open_free_economical_zones
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -1
+		y = 2
+		prerequisite = {focus = industialization_step_one }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = caramels_industy_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -2
+		y = 3
+		prerequisite = { focus = build_more_railroads }
+		prerequisite = { focus = open_free_economical_zones }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}		
+	focus = {
+		id = first_step_completed
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = -4
+		y = 4
+		prerequisite = { 
+		focus = caramels_industy_plan 
+		focus = polyas_industry_plan 
+		focus = vasyas_industry_plan }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = economical_policy_question
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 4
+		y = 1
+		prerequisite = {focus = the_palace }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = lower_economical_freedoms
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 1
+		y = 2
+		prerequisite = {focus = economical_policy_question }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = vasyas_economical_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 2
+		y = 3
+		prerequisite = { focus = lower_economical_freedoms }
+		prerequisite = { focus = support_workplace_syndicates }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = support_workplace_syndicates
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 3
+		y = 2
+		prerequisite = {focus = economical_policy_question }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = polyas_economical_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 4
+		y = 3
+		prerequisite = { focus = more_freedoms_for_cooperatives }
+		prerequisite = { focus = support_workplace_syndicates }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = more_freedoms_for_cooperatives
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 5
+		y = 2
+		prerequisite = {focus = economical_policy_question }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = caramels_economical_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 6
+		y = 3
+		prerequisite = { focus = more_freedoms_for_cooperatives }
+		prerequisite = { focus = more_economical_freedoms }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = more_economical_freedoms
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 7
+		y = 2
+		prerequisite = {focus = economical_policy_question }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = economy_saved_for_now
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 4
+		y = 4
+		prerequisite = { 
+		focus = caramels_economical_plan 
+		focus = polyas_economical_plan 
+		focus = vasyas_economical_plan }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = looming_starvation
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 12
+		y = 1
+		prerequisite = {focus = the_palace }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = build_tractors
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 9
+		y = 2
+		prerequisite = {focus = looming_starvation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}
+	focus = {
+		id = vasyas_agricultural_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 10
+		y = 3
+		prerequisite = { focus = build_tractors }
+		prerequisite = { focus = support_collectivization }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = support_collectivization
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 11
+		y = 2
+		prerequisite = {focus = looming_starvation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}	
+	}
+	focus = {
+		id = polyas_agricultural_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 12
+		y = 3
+		prerequisite = { focus = import_tractors }
+		prerequisite = { focus = support_collectivization }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = import_tractors
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 13
+		y = 2
+		prerequisite = {focus = looming_starvation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}	
+	}
+	focus = {
+		id = caramels_agricultural_plan
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 14
+		y = 3
+		prerequisite = { focus = import_tractors }
+		prerequisite = { focus = buy_some_food }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = buy_some_food
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 15
+		y = 2
+		prerequisite = {focus = looming_starvation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = temporary_solution
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 12
+		y = 4
+		prerequisite = { 
+		focus = caramels_agricultural_plan 
+		focus = polyas_agricultural_plan 
+		focus = vasyas_agricultural_plan }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+	focus = {
+		id = 1008_party_congress
+		icon = GFX_goal_stg_palace
+		cost = 3
+		x = 4
+		y = 5
+		prerequisite = { focus = temporary_solution }
+		prerequisite = { focus = economy_saved_for_now }
+		prerequisite = { focus = first_step_completed }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
+			add_political_power = 150
+			country_event = { id=stalliongrad.14 days = 2 }
+		}
+	}	
+}
+
