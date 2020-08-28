@@ -71,10 +71,10 @@ if = {
 
 set_convoys = 15
 set_popularities = {
-	democratic = 5
-	fascism = 3
-	communism = 91
-	neutrality = 1
+	democratic = 33
+	fascism = 0
+	communism = 67
+	neutrality = 0
 }
 set_politics = {
 
@@ -101,6 +101,7 @@ add_manpower = 5000
 
 set_variable = { var = palace_construction value = 0 }
 set_variable = { var = money value = 15 }
+set_variable = { var = colletivized_land value = 40 }
 
 add_equipment_to_stockpile = {
 	type = gw_tank_equipment

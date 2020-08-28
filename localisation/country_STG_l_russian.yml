@@ -933,3 +933,4 @@ STG_gains_wargoal_against_us:0 "§R[STG.GetName] получит повод к в
 
 
 STG_money_counter:0 "У нас есть £coin_text §Y[?money] миллионов§! битс в государственных запасах."
+STG_collectivization_counter:0 "На данный момент коллективизировано £coin_text §Y[?colletivized_land] %§! земли в нашей стране."

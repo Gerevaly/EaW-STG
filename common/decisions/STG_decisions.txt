@@ -1611,3 +1611,23 @@ STG_industrialization = {
 		}		
 	}	
 }
+STG_collectivization = {
+	STG_collectivization_counter = {
+		icon = steel
+
+		visible = {
+			#has_completed_focus = the_palace
+		}
+		available = {
+			always = no
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision FLO_money_counter"
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}	
