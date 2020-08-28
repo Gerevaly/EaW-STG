@@ -1388,9 +1388,7 @@ STG_industrialization = {
 		icon = steel
 
 		visible = {
-			NOT = {
-				has_completed_focus = industialization_step_one
-			}
+			#has_completed_focus = the_palace
 		}
 		available = {
 			always = no
@@ -1448,4 +1446,168 @@ STG_industrialization = {
 		}
 		
 	}
+	STG_arm_factory = {
+		icon = ger_mefo_bills		
+		available = {
+			custom_trigger_tooltip = {
+                #tooltip = FLO_3_PAID_BANK
+                    check_variable = {
+                        money > 2
+                    }
+            }
+		}
+		visible = {
+			has_completed_focus = the_palace
+		}
+		custom_cost_trigger = {
+            has_political_power > 99
+            check_variable = { money > 2 }
+        }
+        #custom_cost_text = decision_cost_bank_3_pp_100
+		
+		days_re_enable = 180
+		days_remove = 120
+		#ai_will_do = {
+		#	factor = 40
+		#	modifier = {
+		#		factor = 0
+		#		check_variable = {
+		#			bank < 4
+		#		}
+		#	}
+		#}
+		complete_effect = {
+			#log = "[GetDateText]: [Root.GetName]: Decision FLO_loan_to_guilds"
+			#add_timed_idea = { idea = FLO_loan_idea  days = 365 }
+			#custom_effect_tooltip = FLO_3_PAID_BANK
+			subtract_from_variable = {
+				var = money
+				value = 2
+			}
+		}
+		remove_effect = {
+			one_random_arms_factory = yes
+		}
+		
+	}	
+	STG_build_infrastructure = {
+		icon = ger_mefo_bills		
+		available = {
+			custom_trigger_tooltip = {
+                #tooltip = FLO_3_PAID_BANK
+                    check_variable = {
+                        money > 2
+                    }
+            }
+		}
+		visible = {
+			has_completed_focus = the_palace
+		}
+		custom_cost_trigger = {
+            has_political_power > 99
+            check_variable = { money > 2 }
+        }
+        #custom_cost_text = decision_cost_bank_3_pp_100
+		
+		days_re_enable = 180
+		days_remove = 120
+		#ai_will_do = {
+		#	factor = 40
+		#	modifier = {
+		#		factor = 0
+		#		check_variable = {
+		#			bank < 4
+		#		}
+		#	}
+		#}
+		complete_effect = {
+			#log = "[GetDateText]: [Root.GetName]: Decision FLO_loan_to_guilds"
+			#add_timed_idea = { idea = FLO_loan_idea  days = 365 }
+			#custom_effect_tooltip = FLO_3_PAID_BANK
+			subtract_from_variable = {
+				var = money
+				value = 2
+			}
+		}
+		remove_effect = {
+			one_random_infrastructure = yes
+		}
+		
+	}
+	STG_build_dockyard = {
+		icon = ger_mefo_bills		
+		available = {
+			custom_trigger_tooltip = {
+                #tooltip = FLO_3_PAID_BANK
+                    check_variable = {
+                        money > 2
+                    }
+            }
+		}
+		visible = {
+			has_completed_focus = the_palace
+		}
+		custom_cost_trigger = {
+            has_political_power > 99
+            check_variable = { money > 2 }
+        }
+        #custom_cost_text = decision_cost_bank_3_pp_100
+		
+		days_re_enable = 180
+		days_remove = 120
+		#ai_will_do = {
+		#	factor = 40
+		#	modifier = {
+		#		factor = 0
+		#		check_variable = {
+		#			bank < 4
+		#		}
+		#	}
+		#}
+		complete_effect = {
+			#log = "[GetDateText]: [Root.GetName]: Decision FLO_loan_to_guilds"
+			#add_timed_idea = { idea = FLO_loan_idea  days = 365 }
+			#custom_effect_tooltip = FLO_3_PAID_BANK
+			subtract_from_variable = {
+				var = money
+				value = 2
+			}
+		}
+		remove_effect = {
+			one_random_dockyard = yes
+		}
+		
+	}
+	STG_more_money = {
+		icon = ger_mefo_bills		
+		available = {
+			always = no
+		}
+		visible = {
+			has_completed_focus = the_palace
+		}
+		activation = {
+			STG = { has_completed_focus = first_step_completed }
+		}		
+        #custom_cost_text = decision_cost_bank_3_pp_100
+		days_mission_timeout = 3
+		fire_only_once = no		
+		days_re_enable = 1
+		days_remove = 1
+		#ai_will_do = {
+		#	factor = 40
+		#	modifier = {
+		#		factor = 0
+		#		check_variable = {
+		#			bank < 4
+		#		}
+		#	}
+		#}
+		timeout_effect = {
+			add_to_variable = {
+				var = money
+				value = 3
+			}
+		}		
+	}	
 }

@@ -20,8 +20,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_political_power = 100
+			country_event = { id=stalliongrad.1 }
 			STG = {
 				set_variable = {
 					var = money
@@ -42,8 +42,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			country_event = { id=stalliongrad.2 }
 		}
 	}
 	focus = {
@@ -58,8 +57,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			three_random_arms_factory = yes
+			subtract_from_variable = {
+				var = money
+				value = 2
+			}			
 		}
 	}
 	focus = {
@@ -75,8 +77,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 2
+				technology = construction1
+				technology = construction2
+				technology = construction3
+				technology = construction4
+			}
 		}
 	}	
 	focus = {
@@ -91,8 +100,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			three_random_industrial_complex = yes
+			subtract_from_variable = {
+				var = money
+				value = 2
+			}			
 		}
 	}	
 	focus = {
@@ -107,8 +119,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			two_random_infrastructure = yes
+			two_random_infrastructure = yes
+			subtract_from_variable = {
+				var = money
+				value = 2
+			}			
 		}
 	}
 	focus = {
@@ -123,9 +139,14 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 2
+				technology = improved_machine_tools
+				technology = advanced_machine_tools
+				technology = assembly_line_production				
+			}
 		}
 	}	
 	focus = {
@@ -140,8 +161,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_political_power = -100
+			four_random_industrial_complex = yes
+			two_random_industrial_complex = yes
+			add_to_variable = {
+				var = money
+				value = 5
+			}			
 		}
 	}	
 	focus = {
@@ -156,9 +182,16 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}			
 		}
 	}		
 	focus = {
@@ -176,8 +209,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
 		}
 	}	
 	focus = {
@@ -193,7 +224,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
 			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			country_event = { id=stalliongrad.3 }
 		}
 	}
 	focus = {
@@ -343,7 +374,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
 			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			country_event = { id=stalliongrad.4 }
 		}
 	}
 	focus = {
@@ -358,8 +389,21 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			153 = {
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}								
+			}
+			subtract_from_variable = {
+				var = money
+				value = 1
+			}			
 		}
 	}
 	focus = {
@@ -391,8 +435,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			subtract_from_variable = {
+				var = money
+				value = 3
+			}
 		}	
 	}
 	focus = {
@@ -424,8 +470,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			add_political_power = -50
+			subtract_from_variable = {
+				var = money
+				value = 3
+			}				
 		}	
 	}
 	focus = {
@@ -457,8 +506,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
-			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			subtract_from_variable = {
+				var = money
+				value = 3
+			}
 		}
 	}	
 	focus = {
@@ -495,7 +546,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus the_palace"
 			add_political_power = 150
-			country_event = { id=stalliongrad.14 days = 2 }
+			country_event = { id=stalliongrad.5 }
 		}
 	}	
 }
